@@ -1,0 +1,66 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'XiaoMiFeng' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  
+  # Pods for XiaoMiFeng
+  
+  source 'https://github.com/CocoaPods/Specs.git'
+  
+  pod 'SGQRCode', '~> 3.0.1'#二维码
+  #pod 'MMWebView'#加载网页
+  pod 'IQKeyboardManager'#iOS8 and later,键盘管理库
+  pod 'AvoidCrash', '~> 2.5.2'#防止崩溃
+  pod 'UITableView+FDTemplateLayoutCell'#Cell自动高度计算
+  pod 'YBAttributeTextTapAction'#添加文本点击事件
+  #pod 'SVProgressHUD'#提示框
+  pod 'MJRefresh'#刷新
+  pod 'Masonry'#布局
+  #pod 'AFNetworking'#网络
+  pod 'AFNetworking', '~> 4.0'#网络请求
+  pod 'YYModel'#数据模型
+  pod 'Masonry'#布局
+  pod 'SDCycleScrollView'#图片轮播器
+  pod 'LYEmptyView'#占位图
+  pod 'MBProgressHUD','1.1.0'#提示框
+ # pod 'NHHUDExtend'#含MBProgressHUD库的拓展提示框
+  pod 'SGPagingView', '~> 1.6.7'#标题滚动视图
+  pod 'YYCache'#数据缓存
+  #pod 'BRPickerView'#选择器
+  pod 'WMPageController', '~> 2.4.0'#悬停
+  #pod 'BAWKWebView'#分类封装 WKWebView
+  pod 'WHUCalendar'#日历
+  pod 'MJExtension'#JSON与Model转换框架
+  pod 'TZImagePickerController' #iOS8 and later图片选择器
+  pod 'Popover.OC'#菜单弹窗
+  pod 'XHWebImageAutoSize'#图片尺寸
+  #pod 'YBImageBrowser'#图片浏览器
+  pod 'GKPhotoBrowser'#图片浏览器
+  pod 'AxcAE_TabBar'#自定义特效TabBar
+  pod 'GKCover'#遮罩视图
+  
+  #会员系统SDK
+  
+  #谷歌的Firebase
+  pod 'Firebase/Auth', '~> 6.16.0'
+  pod 'GoogleSignIn', '~> 5.0.2'
+  pod 'FBSDKLoginKit', '~>6.0.0'
+  
+  #微信分享和支付等
+  pod 'WechatOpenSDK'
+  
+  #会员系统SDK
+  
+  pod 'JXTAlertManager'#弹框封装
+  
+  pod 'LBXPermission/Base'#权限检测基础库
+  pod 'LBXPermission/Camera'#相机权限检测
+  pod 'TYSnapshotScroll'#截长图
+  #pod 'ZSSnapshotKit', '~> 0.0.2'#截长图
+  
+  
+  
+  
+end

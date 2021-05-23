@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="XMFThemeDetailHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="298" height="306"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wpe-Oe-L39">
+                    <rect key="frame" x="0.0" y="0.0" width="298" height="390"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Wpe-Oe-L39" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="Dci-XY-LLW"/>
+                <constraint firstAttribute="bottom" secondItem="Wpe-Oe-L39" secondAttribute="bottom" constant="-84" id="Gmu-as-EYa"/>
+                <constraint firstItem="Wpe-Oe-L39" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="TLL-iW-tTA"/>
+                <constraint firstAttribute="trailing" secondItem="Wpe-Oe-L39" secondAttribute="trailing" id="Vgk-Pg-wLX"/>
+            </constraints>
+            <connections>
+                <outlet property="bgImgView" destination="Wpe-Oe-L39" id="QB6-lf-bpz"/>
+                <outlet property="bgImgViewBottomSpace" destination="Gmu-as-EYa" id="bbM-jP-5E1"/>
+            </connections>
+            <point key="canvasLocation" x="-72.463768115942031" y="50.223214285714285"/>
+        </collectionReusableView>
+    </objects>
+</document>

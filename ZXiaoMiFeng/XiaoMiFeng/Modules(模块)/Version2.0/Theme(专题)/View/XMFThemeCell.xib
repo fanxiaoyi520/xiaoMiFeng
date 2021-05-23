@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="XMFThemeCell">
+            <rect key="frame" x="0.0" y="0.0" width="210" height="129"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="210" height="129"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_common_placeSqua" translatesAutoresizingMaskIntoConstraints="NO" id="gSa-MO-tpD">
+                        <rect key="frame" x="0.0" y="0.0" width="210" height="129"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="gSa-MO-tpD" secondAttribute="bottom" id="HHB-ca-1CY"/>
+                <constraint firstItem="gSa-MO-tpD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TtE-4P-xe6"/>
+                <constraint firstAttribute="trailing" secondItem="gSa-MO-tpD" secondAttribute="trailing" id="m7k-h7-Y0D"/>
+                <constraint firstItem="gSa-MO-tpD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="r8h-zl-gch"/>
+            </constraints>
+            <size key="customSize" width="210" height="129"/>
+            <connections>
+                <outlet property="themeImgView" destination="gSa-MO-tpD" id="c63-6C-jfG"/>
+            </connections>
+            <point key="canvasLocation" x="149.27536231884059" y="72.65625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_common_placeSqua" width="355" height="206"/>
+    </resources>
+</document>

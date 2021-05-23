@@ -1,0 +1,6 @@
+framework module WHUCalendar {
+  umbrella header "WHUCalendar-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XMFOverseaShoppingController">
+            <connections>
+                <outlet property="bottomView" destination="d9N-yL-W9a" id="vWL-dO-1zZ"/>
+                <outlet property="bottomViewHeight" destination="aRH-06-g8o" id="mX5-L5-WlU"/>
+                <outlet property="caculateBtn" destination="GMf-mK-lye" id="j7w-vf-6rQ"/>
+                <outlet property="myTableView" destination="VnL-eg-ggK" id="6V2-dW-sHC"/>
+                <outlet property="totalMoneyLB" destination="MYR-ae-GBt" id="Cjb-Ke-j24"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VnL-eg-ggK">
+                    <rect key="frame" x="0.0" y="44" width="414" height="762"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d9N-yL-W9a">
+                    <rect key="frame" x="0.0" y="806" width="414" height="56"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMf-mK-lye">
+                            <rect key="frame" x="274" y="8" width="125" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="125" id="2Mr-Cf-tgH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="结算" backgroundImage="btn_order_querendd">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonsOnViewDidClick:" destination="-1" eventType="touchUpInside" id="ytB-bi-PmT"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYR-ae-GBt">
+                            <rect key="frame" x="15" y="0.0" width="249" height="56"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tRL-Wd-cXX">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                            <color key="backgroundColor" red="0.91372549020000005" green="0.92156862750000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="6Qh-6o-cRZ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="GMf-mK-lye" secondAttribute="bottom" constant="8" id="0Rf-QW-rEP"/>
+                        <constraint firstItem="MYR-ae-GBt" firstAttribute="leading" secondItem="d9N-yL-W9a" secondAttribute="leading" constant="15" id="8J7-GW-b3m"/>
+                        <constraint firstAttribute="trailing" secondItem="tRL-Wd-cXX" secondAttribute="trailing" id="BrS-ub-mcH"/>
+                        <constraint firstAttribute="height" constant="56" id="aRH-06-g8o"/>
+                        <constraint firstAttribute="trailing" secondItem="GMf-mK-lye" secondAttribute="trailing" constant="15" id="hrc-Bc-siw"/>
+                        <constraint firstItem="tRL-Wd-cXX" firstAttribute="leading" secondItem="d9N-yL-W9a" secondAttribute="leading" id="lgy-h9-CTr"/>
+                        <constraint firstItem="GMf-mK-lye" firstAttribute="top" secondItem="d9N-yL-W9a" secondAttribute="top" constant="8" id="nhp-0x-pAZ"/>
+                        <constraint firstItem="MYR-ae-GBt" firstAttribute="top" secondItem="d9N-yL-W9a" secondAttribute="top" id="pJN-Cx-dcc"/>
+                        <constraint firstItem="GMf-mK-lye" firstAttribute="leading" secondItem="MYR-ae-GBt" secondAttribute="trailing" constant="10" id="peR-Pk-jFC"/>
+                        <constraint firstAttribute="bottom" secondItem="MYR-ae-GBt" secondAttribute="bottom" id="q4r-V5-BVa"/>
+                        <constraint firstItem="tRL-Wd-cXX" firstAttribute="top" secondItem="d9N-yL-W9a" secondAttribute="top" id="wkn-bX-Knw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="d9N-yL-W9a" secondAttribute="trailing" id="Dbx-El-dpQ"/>
+                <constraint firstItem="d9N-yL-W9a" firstAttribute="top" secondItem="VnL-eg-ggK" secondAttribute="bottom" id="GWH-3b-CU0"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="d9N-yL-W9a" secondAttribute="bottom" id="L03-vF-Ven"/>
+                <constraint firstItem="VnL-eg-ggK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NkH-I0-pAf"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="VnL-eg-ggK" secondAttribute="trailing" id="aDE-il-Mxw"/>
+                <constraint firstItem="d9N-yL-W9a" firstAttribute="top" secondItem="VnL-eg-ggK" secondAttribute="bottom" id="oNY-K1-BxQ"/>
+                <constraint firstItem="VnL-eg-ggK" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="rHM-v1-muk"/>
+                <constraint firstItem="d9N-yL-W9a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tb0-UO-I2J"/>
+            </constraints>
+            <point key="canvasLocation" x="118.84057971014494" y="128.57142857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_order_querendd" width="8.5" height="26"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

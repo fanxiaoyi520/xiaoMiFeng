@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XMFHomeHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75o-mO-2nj">
+                    <rect key="frame" x="0.0" y="0.0" width="52" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="52" id="F5W-UB-idn"/>
+                    </constraints>
+                    <state key="normal" image="icon_home_saomiao"/>
+                    <connections>
+                        <action selector="buttonsOnViewDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="d1C-zI-dgM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulw-tF-TKB">
+                    <rect key="frame" x="279" y="0.0" width="52" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="52" id="gQB-Iz-Fv5"/>
+                    </constraints>
+                    <state key="normal" image="icon_home_geren"/>
+                    <connections>
+                        <action selector="buttonsOnViewDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="e3t-qM-ItO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Zr-QZ-1tV">
+                    <rect key="frame" x="52" y="5" width="227" height="34"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="  搜索商品" image="icon_home_search" backgroundImage="icon_home_searchfield">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonsOnViewDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="zyE-wN-fr2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.81176470588235294" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="75o-mO-2nj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0GP-Qd-jOb"/>
+                <constraint firstItem="5Zr-QZ-1tV" firstAttribute="leading" secondItem="75o-mO-2nj" secondAttribute="trailing" id="6fv-ry-Jc8"/>
+                <constraint firstAttribute="trailing" secondItem="ulw-tF-TKB" secondAttribute="trailing" id="EAq-ta-onJ"/>
+                <constraint firstItem="ulw-tF-TKB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GlQ-ir-Ef6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="5Zr-QZ-1tV" secondAttribute="bottom" constant="5" id="aMT-eF-NMs"/>
+                <constraint firstItem="75o-mO-2nj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bTE-8A-EyB"/>
+                <constraint firstItem="5Zr-QZ-1tV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="bvY-NG-rLk"/>
+                <constraint firstItem="ulw-tF-TKB" firstAttribute="leading" secondItem="5Zr-QZ-1tV" secondAttribute="trailing" id="pRa-gI-0MR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="75o-mO-2nj" secondAttribute="bottom" id="vN5-Fn-4nC"/>
+                <constraint firstItem="ulw-tF-TKB" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="vsT-1h-eDF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="meBtn" destination="ulw-tF-TKB" id="FvR-TA-65e"/>
+                <outlet property="scanBtn" destination="75o-mO-2nj" id="7kP-Jb-gMd"/>
+                <outlet property="searchBtn" destination="5Zr-QZ-1tV" id="Ha8-dW-DKD"/>
+            </connections>
+            <point key="canvasLocation" x="113.768115942029" y="-254.46428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_home_geren" width="22" height="22"/>
+        <image name="icon_home_saomiao" width="22" height="22"/>
+        <image name="icon_home_search" width="14" height="14"/>
+        <image name="icon_home_searchfield" width="270" height="34"/>
+    </resources>
+</document>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XMFOrdersHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="47"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dGc-bo-YrE">
+                    <rect key="frame" x="0.0" y="9" width="362" height="38"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订单编号：123459406699" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsH-Zv-TDB">
+                            <rect key="frame" x="15" y="0.0" width="185" height="38"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="待发货" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1X6-zd-CWP">
+                            <rect key="frame" x="307" y="0.0" width="40" height="38"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="HsH-Zv-TDB" secondAttribute="bottom" id="Qiv-cs-epr"/>
+                        <constraint firstItem="1X6-zd-CWP" firstAttribute="top" secondItem="dGc-bo-YrE" secondAttribute="top" id="cy9-iV-Tbn"/>
+                        <constraint firstAttribute="height" constant="38" id="eYC-33-yXo"/>
+                        <constraint firstItem="HsH-Zv-TDB" firstAttribute="top" secondItem="dGc-bo-YrE" secondAttribute="top" id="mtO-3E-g6b"/>
+                        <constraint firstAttribute="trailing" secondItem="1X6-zd-CWP" secondAttribute="trailing" constant="15" id="vUd-uQ-LZG"/>
+                        <constraint firstAttribute="bottom" secondItem="1X6-zd-CWP" secondAttribute="bottom" id="xKm-ow-ESj"/>
+                        <constraint firstItem="HsH-Zv-TDB" firstAttribute="leading" secondItem="dGc-bo-YrE" secondAttribute="leading" constant="15" id="xg3-fZ-SWw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dGc-bo-YrE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0Xs-Pe-XYl"/>
+                <constraint firstAttribute="trailing" secondItem="dGc-bo-YrE" secondAttribute="trailing" id="HFr-6N-Snt"/>
+                <constraint firstAttribute="bottom" secondItem="dGc-bo-YrE" secondAttribute="bottom" id="vq2-fm-lOk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="orderNumLB" destination="HsH-Zv-TDB" id="ohQ-5U-ynn"/>
+                <outlet property="orderStatusLB" destination="1X6-zd-CWP" id="5x5-z5-vih"/>
+            </connections>
+            <point key="canvasLocation" x="185.50724637681162" y="-187.16517857142856"/>
+        </view>
+    </objects>
+</document>

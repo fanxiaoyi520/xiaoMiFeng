@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="173" id="KGk-i7-Jjw" customClass="XMFShoppingSplitOrdersCell">
+            <rect key="frame" x="0.0" y="0.0" width="279" height="173"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="279" height="173"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAF-qD-o6I">
+                        <rect key="frame" x="7" y="0.0" width="33" height="47"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="47" id="4Yh-3G-qAi"/>
+                            <constraint firstAttribute="width" constant="33" id="CgA-ZU-wPQ"/>
+                        </constraints>
+                        <state key="normal" image="icon_seletct"/>
+                        <state key="selected" image="icon_seletcted_ye"/>
+                        <connections>
+                            <action selector="buttonsOnViewDidClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xWN-jL-sXE"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVY-mR-Mal">
+                        <rect key="frame" x="40" y="16" width="239" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Rel-Yy-97Y">
+                        <rect key="frame" x="0.0" y="47" width="279" height="111"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iRQ-Pq-OP1">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Rel-Yy-97Y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1Rt-mV-uWV"/>
+                    <constraint firstAttribute="trailing" secondItem="Rel-Yy-97Y" secondAttribute="trailing" id="6Gt-ys-OIl"/>
+                    <constraint firstItem="RAF-qD-o6I" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="7" id="7vz-yp-mXw"/>
+                    <constraint firstItem="RAF-qD-o6I" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="D0c-fm-sub"/>
+                    <constraint firstItem="zVY-mR-Mal" firstAttribute="centerY" secondItem="RAF-qD-o6I" secondAttribute="centerY" id="Jya-pw-Ib9"/>
+                    <constraint firstItem="zVY-mR-Mal" firstAttribute="leading" secondItem="RAF-qD-o6I" secondAttribute="trailing" id="Kaa-Sw-rzv"/>
+                    <constraint firstAttribute="bottom" secondItem="Rel-Yy-97Y" secondAttribute="bottom" constant="15" id="Mng-Av-j8U"/>
+                    <constraint firstAttribute="trailing" secondItem="zVY-mR-Mal" secondAttribute="trailing" id="Zhz-Nq-goK"/>
+                    <constraint firstItem="Rel-Yy-97Y" firstAttribute="top" secondItem="RAF-qD-o6I" secondAttribute="bottom" id="aMO-oq-xLq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="goodsAcountLB" destination="zVY-mR-Mal" id="qv8-IX-5lJ"/>
+                <outlet property="myCollectionView" destination="Rel-Yy-97Y" id="8IS-h4-I20"/>
+                <outlet property="selectedBtn" destination="RAF-qD-o6I" id="5aA-lk-UXA"/>
+            </connections>
+            <point key="canvasLocation" x="219.56521739130437" y="63.950892857142854"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_seletct" width="17" height="17"/>
+        <image name="icon_seletcted_ye" width="17" height="17"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

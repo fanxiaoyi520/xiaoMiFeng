@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XMFOrdersHeaderFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="478" height="76"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*缺货说明：" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzC-ja-Lfi">
+                    <rect key="frame" x="15" y="10" width="448" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.98431372549999996" green="0.30196078430000001" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="实付：-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6E6-4d-O1J">
+                    <rect key="frame" x="15" y="37" width="49.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuK-sR-Erl">
+                    <rect key="frame" x="379" y="32.5" width="84" height="26"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="确认收货" backgroundImage="icon_order_querendd">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonsOnViewDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="nth-NW-hqr"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKU-Tg-Jpw">
+                    <rect key="frame" x="283" y="32.5" width="84" height="26"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="取消订单" backgroundImage="icon_order_quxiaodd">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonsOnViewDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="9wC-Ih-cBH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="iuK-sR-Erl" firstAttribute="centerY" secondItem="6E6-4d-O1J" secondAttribute="centerY" id="4Pk-Hz-Zok"/>
+                <constraint firstAttribute="bottom" secondItem="6E6-4d-O1J" secondAttribute="bottom" constant="22" id="IYL-Xl-k2f"/>
+                <constraint firstAttribute="trailing" secondItem="zzC-ja-Lfi" secondAttribute="trailing" constant="15" id="UOG-px-ZU2"/>
+                <constraint firstItem="iuK-sR-Erl" firstAttribute="leading" secondItem="pKU-Tg-Jpw" secondAttribute="trailing" constant="12" id="YoC-i5-uBg"/>
+                <constraint firstItem="pKU-Tg-Jpw" firstAttribute="width" secondItem="iuK-sR-Erl" secondAttribute="width" id="Znl-Wk-vGY"/>
+                <constraint firstItem="zzC-ja-Lfi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="aNF-rF-QMA"/>
+                <constraint firstItem="6E6-4d-O1J" firstAttribute="top" secondItem="zzC-ja-Lfi" secondAttribute="bottom" constant="10" id="bqw-fp-mqc"/>
+                <constraint firstItem="6E6-4d-O1J" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="fTK-v8-c6A"/>
+                <constraint firstItem="zzC-ja-Lfi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="iBu-Kq-IHu"/>
+                <constraint firstAttribute="trailing" secondItem="iuK-sR-Erl" secondAttribute="trailing" constant="15" id="l7D-mD-Cqr"/>
+                <constraint firstItem="pKU-Tg-Jpw" firstAttribute="bottom" secondItem="iuK-sR-Erl" secondAttribute="bottom" id="uLy-qY-pXx"/>
+                <constraint firstItem="pKU-Tg-Jpw" firstAttribute="top" secondItem="iuK-sR-Erl" secondAttribute="top" id="yMX-9L-TES"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="amountLB" destination="6E6-4d-O1J" id="rhR-oc-v7P"/>
+                <outlet property="leftBtn" destination="pKU-Tg-Jpw" id="9Br-1m-CPf"/>
+                <outlet property="rightBtn" destination="iuK-sR-Erl" id="tkb-Zd-4JD"/>
+                <outlet property="stockoutsLB" destination="zzC-ja-Lfi" id="XdO-Lx-tdU"/>
+            </connections>
+            <point key="canvasLocation" x="184.05797101449278" y="-148.99553571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_order_querendd" width="8.5" height="26"/>
+        <image name="icon_order_quxiaodd" width="84" height="26"/>
+    </resources>
+</document>

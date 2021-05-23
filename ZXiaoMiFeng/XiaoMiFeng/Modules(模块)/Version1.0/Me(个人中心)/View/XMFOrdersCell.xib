@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="117" id="KGk-i7-Jjw" customClass="XMFOrdersCell">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="117"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="325" height="117"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_common_placeRect" translatesAutoresizingMaskIntoConstraints="NO" id="ZIo-rP-Xsl">
+                        <rect key="frame" x="15" y="15" width="102" height="102"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ZIo-rP-Xsl" secondAttribute="height" multiplier="1:1" id="8Ax-bc-wca"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rc-Jr-HF3">
+                        <rect key="frame" x="127" y="25" width="183" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7s-OJ-rhf">
+                        <rect key="frame" x="127" y="48" width="6" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZIo-rP-Xsl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="6sJ-HA-kQr"/>
+                    <constraint firstAttribute="trailing" secondItem="7rc-Jr-HF3" secondAttribute="trailing" constant="15" id="CXZ-yI-6wP"/>
+                    <constraint firstItem="b7s-OJ-rhf" firstAttribute="top" secondItem="7rc-Jr-HF3" secondAttribute="bottom" constant="5" id="I7Y-aI-raA"/>
+                    <constraint firstAttribute="bottom" secondItem="ZIo-rP-Xsl" secondAttribute="bottom" id="OEm-AV-PWN"/>
+                    <constraint firstItem="b7s-OJ-rhf" firstAttribute="leading" secondItem="7rc-Jr-HF3" secondAttribute="leading" id="Yas-FG-6nl"/>
+                    <constraint firstItem="ZIo-rP-Xsl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="bEq-L4-5gS"/>
+                    <constraint firstItem="7rc-Jr-HF3" firstAttribute="leading" secondItem="ZIo-rP-Xsl" secondAttribute="trailing" constant="10" id="mHp-oO-Kts"/>
+                    <constraint firstItem="7rc-Jr-HF3" firstAttribute="top" secondItem="ZIo-rP-Xsl" secondAttribute="top" constant="10" id="ndF-vJ-du5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="coverImgView" destination="ZIo-rP-Xsl" id="ofd-pR-tYU"/>
+                <outlet property="goodsAmountLB" destination="b7s-OJ-rhf" id="f2P-1v-rlM"/>
+                <outlet property="goodsNameLB" destination="7rc-Jr-HF3" id="tWm-o3-Eia"/>
+            </connections>
+            <point key="canvasLocation" x="141.30434782608697" y="106.13839285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_common_placeRect" width="100" height="100"/>
+    </resources>
+</document>

@@ -1,0 +1,258 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - AppAuth (1.4.0):
+    - AppAuth/Core (= 1.4.0)
+    - AppAuth/ExternalUserAgent (= 1.4.0)
+  - AppAuth/Core (1.4.0)
+  - AppAuth/ExternalUserAgent (1.4.0)
+  - AvoidCrash (2.5.2)
+  - AxcAE_TabBar (1.0.5)
+  - FBSDKCoreKit (6.0.0):
+    - FBSDKCoreKit/Basics (= 6.0.0)
+    - FBSDKCoreKit/Core (= 6.0.0)
+  - FBSDKCoreKit/Basics (6.0.0)
+  - FBSDKCoreKit/Core (6.0.0):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (6.0.0):
+    - FBSDKLoginKit/Login (= 6.0.0)
+  - FBSDKLoginKit/Login (6.0.0):
+    - FBSDKCoreKit (~> 6.0.0)
+  - Firebase/Auth (6.16.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (~> 6.4.3)
+  - Firebase/CoreOnly (6.16.0):
+    - FirebaseCore (= 6.6.1)
+  - FirebaseAuth (6.4.3):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 6.6)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.5)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseAuthInterop (1.1.0)
+  - FirebaseCore (6.6.1):
+    - FirebaseCoreDiagnostics (~> 1.2)
+    - FirebaseCoreDiagnosticsInterop (~> 1.2)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GoogleUtilities/Logger (~> 6.5)
+  - FirebaseCoreDiagnostics (1.3.0):
+    - FirebaseCoreDiagnosticsInterop (~> 1.2)
+    - GoogleDataTransportCCTSupport (~> 3.1)
+    - GoogleUtilities/Environment (~> 6.5)
+    - GoogleUtilities/Logger (~> 6.5)
+    - nanopb (~> 1.30905.0)
+  - FirebaseCoreDiagnosticsInterop (1.2.0)
+  - GKCover (2.5.5)
+  - GKPhotoBrowser (2.0.0):
+    - GKPhotoBrowser/SD (= 2.0.0)
+  - GKPhotoBrowser/SD (2.0.0):
+    - SDWebImage (~> 5.0)
+  - GoogleDataTransport (6.2.1)
+  - GoogleDataTransportCCTSupport (3.1.0):
+    - GoogleDataTransport (~> 6.1)
+    - nanopb (~> 1.30905.0)
+  - GoogleSignIn (5.0.2):
+    - AppAuth (~> 1.2)
+    - GTMAppAuth (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleUtilities/AppDelegateSwizzler (6.6.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.6.0):
+    - PromisesObjC (~> 1.2)
+  - GoogleUtilities/Logger (6.6.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/Network (6.6.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.6.0)"
+  - GoogleUtilities/Reachability (6.6.0):
+    - GoogleUtilities/Logger
+  - GTMAppAuth (1.0.0):
+    - AppAuth/Core (~> 1.0)
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.4.0):
+    - GTMSessionFetcher/Full (= 1.4.0)
+  - GTMSessionFetcher/Core (1.4.0)
+  - GTMSessionFetcher/Full (1.4.0):
+    - GTMSessionFetcher/Core (= 1.4.0)
+  - IQKeyboardManager (6.5.5)
+  - JXTAlertManager (1.0.2)
+  - LBXPermission/Base (1.0.5)
+  - LBXPermission/Camera (1.0.5)
+  - LYEmptyView (1.3.1)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
+  - MJExtension (3.2.1)
+  - MJRefresh (3.4.3)
+  - nanopb (1.30905.0):
+    - nanopb/decode (= 1.30905.0)
+    - nanopb/encode (= 1.30905.0)
+  - nanopb/decode (1.30905.0)
+  - nanopb/encode (1.30905.0)
+  - Popover.OC (2.2)
+  - PromisesObjC (1.2.8)
+  - SDCycleScrollView (1.80):
+    - SDWebImage (>= 5.0.0)
+  - SDWebImage (5.8.0):
+    - SDWebImage/Core (= 5.8.0)
+  - SDWebImage/Core (5.8.0)
+  - SGPagingView (1.6.7)
+  - SGQRCode (3.0.1)
+  - TYSnapshotScroll (0.2.1)
+  - TZImagePickerController (3.3.2)
+  - "UITableView+FDTemplateLayoutCell (1.6)"
+  - WechatOpenSDK (1.8.7.1)
+  - WHUCalendar (0.1.2)
+  - WMPageController (2.4.3)
+  - XHWebImageAutoSize (1.1.2)
+  - YBAttributeTextTapAction (3.0.3)
+  - YYCache (1.0.4)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - AFNetworking (~> 4.0)
+  - AvoidCrash (~> 2.5.2)
+  - AxcAE_TabBar
+  - FBSDKLoginKit (~> 6.0.0)
+  - Firebase/Auth (~> 6.16.0)
+  - GKCover
+  - GKPhotoBrowser
+  - GoogleSignIn (~> 5.0.2)
+  - IQKeyboardManager
+  - JXTAlertManager
+  - LBXPermission/Base
+  - LBXPermission/Camera
+  - LYEmptyView
+  - Masonry
+  - MBProgressHUD (= 1.1.0)
+  - MJExtension
+  - MJRefresh
+  - Popover.OC
+  - SDCycleScrollView
+  - SGPagingView (~> 1.6.7)
+  - SGQRCode (~> 3.0.1)
+  - TYSnapshotScroll
+  - TZImagePickerController
+  - "UITableView+FDTemplateLayoutCell"
+  - WechatOpenSDK
+  - WHUCalendar
+  - WMPageController (~> 2.4.0)
+  - XHWebImageAutoSize
+  - YBAttributeTextTapAction
+  - YYCache
+  - YYModel
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - AppAuth
+    - AvoidCrash
+    - AxcAE_TabBar
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - Firebase
+    - FirebaseAuth
+    - FirebaseAuthInterop
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCoreDiagnosticsInterop
+    - GKCover
+    - GKPhotoBrowser
+    - GoogleDataTransport
+    - GoogleDataTransportCCTSupport
+    - GoogleSignIn
+    - GoogleUtilities
+    - GTMAppAuth
+    - GTMSessionFetcher
+    - IQKeyboardManager
+    - JXTAlertManager
+    - LBXPermission
+    - LYEmptyView
+    - Masonry
+    - MBProgressHUD
+    - MJExtension
+    - MJRefresh
+    - nanopb
+    - Popover.OC
+    - PromisesObjC
+    - SDCycleScrollView
+    - SDWebImage
+    - SGPagingView
+    - SGQRCode
+    - TYSnapshotScroll
+    - TZImagePickerController
+    - "UITableView+FDTemplateLayoutCell"
+    - WechatOpenSDK
+    - WHUCalendar
+    - WMPageController
+    - XHWebImageAutoSize
+    - YBAttributeTextTapAction
+    - YYCache
+    - YYModel
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
+  AvoidCrash: 28c6916fe19bd2b84126b8dec7cbe61c9a12741d
+  AxcAE_TabBar: 1d5bcf6c4921889dc38839b6ba2c584a9b55251a
+  FBSDKCoreKit: fe738b172590e622c86735b45e20d196848b54df
+  FBSDKLoginKit: fa57df1b967fe0e147b25bede6ea4e9cdf4d64be
+  Firebase: 497158b816d0a86fc31babbd05546fcd7e6083ff
+  FirebaseAuth: 5ce2b03a3d7fe56b7a6e4c5ec7ff1522890b1d6f
+  FirebaseAuthInterop: a0f37ae05833af156e72028f648d313f7e7592e9
+  FirebaseCore: 85064903ed6c28e47fec9c7bd149d94ba1b6b6e7
+  FirebaseCoreDiagnostics: 4a773a47bd83bbd5a9b1ccf1ce7caa8b2d535e67
+  FirebaseCoreDiagnosticsInterop: 296e2c5f5314500a850ad0b83e9e7c10b011a850
+  GKCover: 54663b6ee16ea0b4c0e203a0ffd5a0622223af6e
+  GKPhotoBrowser: d5cf746598ab65904af7654458a1d8bbc8434ae0
+  GoogleDataTransport: 9a8a16f79feffc7f42096743de2a7c4815e84020
+  GoogleDataTransportCCTSupport: d70a561f7d236af529fee598835caad5e25f6d3d
+  GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
+  GoogleUtilities: 39530bc0ad980530298e9c4af8549e991fd033b1
+  GTMAppAuth: 4deac854479704f348309e7b66189e604cf5e01e
+  GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
+  IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
+  JXTAlertManager: 71a89e90ac1a6d72862fbe884eab513cb243a344
+  LBXPermission: e03503500e9540efb75d5f206b82a1a760fd0b26
+  LYEmptyView: b6d418cfa38b78df0cf243f9a9c25ccbdc399922
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
+  MJRefresh: 53e3e3219f204425ee6d3e62e8733d3295944cd6
+  nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
+  Popover.OC: bfcce8307f77593e1e1d7cf58604077f74e114bc
+  PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
+  SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
+  SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
+  SGPagingView: 21152cbb9e25a7259ea2415b028c22f55f362ea2
+  SGQRCode: bf02d60e18d6660a9d75ff1c8b9b467f064f054e
+  TYSnapshotScroll: 13ea2da7d5c3be5240779324bba117ae85c4859a
+  TZImagePickerController: 36ca728ec681228918aa82e993aaab1962281b72
+  "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
+  WechatOpenSDK: 6a4d1436c15b3b5fe2a0bd383f3046010186da44
+  WHUCalendar: a8bc8d732db10e7afb2a4ea14c7bfab177c3a76e
+  WMPageController: 4c7f2c636675a71aea5eecf8fdc07a0ce86954e3
+  XHWebImageAutoSize: 8e5d7bf036f960885769dbe3410579024d3ac1a1
+  YBAttributeTextTapAction: b7e61f0265b5673e7ce7bad7319e8eff9e209a2b
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 8300cb17d4e287bbb3222480ee888b7ef850bce0
+
+COCOAPODS: 1.9.1

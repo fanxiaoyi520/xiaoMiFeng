@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XMFGoodsDetailNaviView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z9d-gb-VcU">
+                    <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Dy-RS-l7C">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="nxs-En-iw7"/>
+                            </constraints>
+                            <state key="normal" image="icon_common_return"/>
+                            <connections>
+                                <action selector="buttonsOnViewDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="cqp-H1-OWX"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b9x-08-LM1">
+                            <rect key="frame" x="120.5" y="0.0" width="134" height="44"/>
+                            <subviews>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DiP-nj-JSY">
+                                    <rect key="frame" x="0.0" y="0.0" width="68" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="68" id="Ygf-rC-fXp"/>
+                                    </constraints>
+                                    <state key="normal">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="详情">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="17"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </state>
+                                    <state key="selected">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="详情">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="17" name="PingFangSC-Medium"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </state>
+                                    <connections>
+                                        <action selector="buttonsOnViewDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="i4d-mc-uIF"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9js-Wd-Qei">
+                                    <rect key="frame" x="68" y="0.0" width="66" height="44"/>
+                                    <state key="normal">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="评价">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="17" name="PingFang-SC-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </state>
+                                    <state key="selected">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="评价">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="17" name="PingFangSC-Medium"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </state>
+                                    <connections>
+                                        <action selector="buttonsOnViewDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="iXB-o6-dbe"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="9js-Wd-Qei" firstAttribute="top" secondItem="b9x-08-LM1" secondAttribute="top" id="2lU-ej-m6f"/>
+                                <constraint firstAttribute="bottom" secondItem="DiP-nj-JSY" secondAttribute="bottom" id="E0l-W4-ewB"/>
+                                <constraint firstItem="9js-Wd-Qei" firstAttribute="leading" secondItem="DiP-nj-JSY" secondAttribute="trailing" id="SmN-a4-axF"/>
+                                <constraint firstAttribute="bottom" secondItem="9js-Wd-Qei" secondAttribute="bottom" id="SvS-c7-EeY"/>
+                                <constraint firstItem="DiP-nj-JSY" firstAttribute="leading" secondItem="b9x-08-LM1" secondAttribute="leading" id="g2E-sA-9Vt"/>
+                                <constraint firstAttribute="trailing" secondItem="9js-Wd-Qei" secondAttribute="trailing" id="iWH-jo-H7M"/>
+                                <constraint firstItem="DiP-nj-JSY" firstAttribute="top" secondItem="b9x-08-LM1" secondAttribute="top" id="xBh-nd-gUw"/>
+                                <constraint firstItem="9js-Wd-Qei" firstAttribute="width" secondItem="DiP-nj-JSY" secondAttribute="width" multiplier="0.971429" id="yFY-BW-yOe"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8u-eR-TaA">
+                            <rect key="frame" x="325" y="0.0" width="50" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="qpb-vB-kpj"/>
+                            </constraints>
+                            <state key="normal" image="icon_home_line"/>
+                            <connections>
+                                <action selector="buttonsOnViewDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="KmH-6i-XIF"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="O8u-eR-TaA" firstAttribute="top" secondItem="z9d-gb-VcU" secondAttribute="top" id="1Ml-Rk-92T"/>
+                        <constraint firstAttribute="bottom" secondItem="O8u-eR-TaA" secondAttribute="bottom" id="24A-Ki-Tgm"/>
+                        <constraint firstItem="b9x-08-LM1" firstAttribute="top" secondItem="z9d-gb-VcU" secondAttribute="top" id="3Xn-sg-X8e"/>
+                        <constraint firstAttribute="bottom" secondItem="8Dy-RS-l7C" secondAttribute="bottom" id="GYb-1P-sGe"/>
+                        <constraint firstAttribute="height" constant="44" id="OI0-Ce-lDn"/>
+                        <constraint firstItem="8Dy-RS-l7C" firstAttribute="leading" secondItem="z9d-gb-VcU" secondAttribute="leading" id="Qld-vD-G3e"/>
+                        <constraint firstItem="b9x-08-LM1" firstAttribute="centerX" secondItem="z9d-gb-VcU" secondAttribute="centerX" id="aEX-mg-D8r"/>
+                        <constraint firstAttribute="bottom" secondItem="b9x-08-LM1" secondAttribute="bottom" id="er0-58-eyX"/>
+                        <constraint firstAttribute="trailing" secondItem="O8u-eR-TaA" secondAttribute="trailing" id="hPA-v0-TvE"/>
+                        <constraint firstItem="8Dy-RS-l7C" firstAttribute="top" secondItem="z9d-gb-VcU" secondAttribute="top" id="yN8-OT-Hzo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="z9d-gb-VcU" secondAttribute="trailing" id="DeP-3h-OqR"/>
+                <constraint firstItem="z9d-gb-VcU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="cWb-Jf-NvM"/>
+                <constraint firstAttribute="bottom" secondItem="z9d-gb-VcU" secondAttribute="bottom" id="d7n-hN-9rt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="detailBtn" destination="DiP-nj-JSY" id="eeF-a3-GGZ"/>
+                <outlet property="evaluateBtn" destination="9js-Wd-Qei" id="nk4-81-pRY"/>
+            </connections>
+            <point key="canvasLocation" x="205.79710144927537" y="-15.401785714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_common_return" width="12" height="20"/>
+        <image name="icon_home_line" width="22" height="22"/>
+    </resources>
+</document>

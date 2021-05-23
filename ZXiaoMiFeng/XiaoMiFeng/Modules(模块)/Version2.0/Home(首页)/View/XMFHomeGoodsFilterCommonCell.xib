@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="XMFHomeGoodsFilterCommonCell">
+            <rect key="frame" x="0.0" y="0.0" width="118" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="118" height="40"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7D-3U-DRS">
+                        <rect key="frame" x="0.0" y="0.0" width="118" height="40"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="-" backgroundImage="shoppingcart_btn_guige">
+                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="selected" backgroundImage="shoppingcart_btn_guige_sel"/>
+                        <connections>
+                            <action selector="buttonsOnViewDidClick:" destination="gTV-IL-0wX" eventType="touchUpInside" id="db7-Ux-14N"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="d7D-3U-DRS" secondAttribute="bottom" id="2pT-7e-Zel"/>
+                <constraint firstAttribute="trailing" secondItem="d7D-3U-DRS" secondAttribute="trailing" id="5Sh-va-kAj"/>
+                <constraint firstItem="d7D-3U-DRS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7Kd-Rp-msc"/>
+                <constraint firstItem="d7D-3U-DRS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8V6-de-SKH"/>
+            </constraints>
+            <size key="customSize" width="118" height="40"/>
+            <connections>
+                <outlet property="standardBtn" destination="d7D-3U-DRS" id="Sn1-so-RMt"/>
+            </connections>
+            <point key="canvasLocation" x="186.95652173913044" y="88.392857142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="shoppingcart_btn_guige" width="8.5" height="8.5"/>
+        <image name="shoppingcart_btn_guige_sel" width="8.5" height="8.5"/>
+    </resources>
+</document>

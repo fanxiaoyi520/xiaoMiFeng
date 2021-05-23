@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XMFFootprintBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="312" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6uA-eG-dka">
+                    <rect key="frame" x="0.0" y="0.0" width="312" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Plp-xi-PFT">
+                            <rect key="frame" x="14" y="0.0" width="70" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="WCZ-rq-8Yd"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                            <state key="normal" title="  全选" image="icon_cart_seletct">
+                                <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" title="  全选" image="icon_cart_seletcted"/>
+                            <connections>
+                                <action selector="buttonsOnViewDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="vxt-js-ea8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vy2-uL-iUn">
+                            <rect key="frame" x="187" y="0.0" width="125" height="44"/>
+                            <color key="backgroundColor" red="0.98431372549999996" green="0.30196078430000001" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="125" id="WUF-8w-8Co"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="删除选中"/>
+                            <connections>
+                                <action selector="buttonsOnViewDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="oUW-Zr-dBb"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pdd-ca-K7a">
+                            <rect key="frame" x="0.0" y="0.0" width="187" height="1"/>
+                            <color key="backgroundColor" red="0.91372549020000005" green="0.92156862750000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="bEW-BM-4F1"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="Pdd-ca-K7a" firstAttribute="top" secondItem="6uA-eG-dka" secondAttribute="top" id="0HD-XF-ymA"/>
+                        <constraint firstAttribute="bottom" secondItem="vy2-uL-iUn" secondAttribute="bottom" id="5lp-cM-EiK"/>
+                        <constraint firstItem="Pdd-ca-K7a" firstAttribute="leading" secondItem="6uA-eG-dka" secondAttribute="leading" id="CDl-6C-xfh"/>
+                        <constraint firstItem="Plp-xi-PFT" firstAttribute="top" secondItem="6uA-eG-dka" secondAttribute="top" id="Lyi-CO-nNk"/>
+                        <constraint firstAttribute="trailing" secondItem="vy2-uL-iUn" secondAttribute="trailing" id="NUK-gF-6Vs"/>
+                        <constraint firstItem="vy2-uL-iUn" firstAttribute="top" secondItem="6uA-eG-dka" secondAttribute="top" id="WTx-9g-74k"/>
+                        <constraint firstItem="Plp-xi-PFT" firstAttribute="leading" secondItem="6uA-eG-dka" secondAttribute="leading" constant="14" id="YRQ-Pg-ADz"/>
+                        <constraint firstAttribute="bottom" secondItem="Plp-xi-PFT" secondAttribute="bottom" id="aQm-pZ-uKk"/>
+                        <constraint firstItem="vy2-uL-iUn" firstAttribute="leading" secondItem="Pdd-ca-K7a" secondAttribute="trailing" id="ra0-r6-YGJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="6uA-eG-dka" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9Op-l9-QAG"/>
+                <constraint firstAttribute="trailing" secondItem="6uA-eG-dka" secondAttribute="trailing" id="W7C-dG-6RE"/>
+                <constraint firstItem="6uA-eG-dka" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="X8b-yE-qPl"/>
+                <constraint firstAttribute="bottom" secondItem="6uA-eG-dka" secondAttribute="bottom" id="uje-31-xpr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="allSelectedBtn" destination="Plp-xi-PFT" id="ING-Yi-6ba"/>
+                <outlet property="deleteBtn" destination="vy2-uL-iUn" id="ZMM-Ha-ses"/>
+            </connections>
+            <point key="canvasLocation" x="63.768115942028992" y="-188.16964285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_cart_seletct" width="17" height="17"/>
+        <image name="icon_cart_seletcted" width="17" height="18"/>
+    </resources>
+</document>

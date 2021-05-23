@@ -1,0 +1,124 @@
+//
+//  PrefixHeader.pch
+//  XiaoMiFeng
+//
+//  Created by 🐝小蜜蜂🐝 on 2020/4/9.
+//  Copyright © 2020 🐝小蜜蜂🐝. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#pragma mark - ——————— 控制器 ————————
+#import "XMFBaseViewController.h"//基类控制器
+#import "XMFBaseNavigationController.h"//导航控制器
+#import "XMFBaseUseingTabarController.h"//tabbar控制器
+#import "XMFUserManager.h"//用户数据信息类
+#import "XMFHomeViewController.h"//首页
+#import "XMFShoppingCartController.h"//购物车
+#import "XMFProductViewController.h"//小蜜蜂产品
+#import "XMFMineViewController.h"//我的
+#import "XMFAlertController.h"//继承性弹框
+#import "XMFAddressManager.h"//行政地址信息类
+#import "XMFMMWebViewController.h"//网页浏览器
+#import "ZFAppUpdateManager.h"//版本更新
+#import "XMFCommonPopView.h"//通用的弹框
+#import "XMFHomeSimpleController.h"//2.0VIP尊享版首页
+#import "XMFHomeController.h"//2.0标准版首页
+#import "XMFShoppingCartViewController.h"//购物车
+#import "XMFMeViewController.h"//我的
+#import "XMFCommonCustomPopView.h"//自定义通用弹框
+
+
+
+#pragma mark - ——————— 工具 ————————
+#import "UtilsMacros.h"//宏定义
+#import "APPDefine.h"//APP相关的宏定义
+#import "XMFURLString.h"//接口地址宏定义
+#import "XMFUserHttpHelper.h"//网络请求类
+#import "UIView+XWAddForRoundedCorner.h"//切圆角
+#import "UIButton+XMFBackgroudColorForState.h"//按钮设置背景颜色
+#import "UIButton+XMFImageTitlePosition.h"//按钮文字图片位置设置
+#import "NSString+Verify.h"//文字校验
+#import "LimitInput.h"//限制输入
+#import "UITextView+ZWPlaceHolder.h"//UITextView的占位文字
+#import "GetUUID.h"//获取设备唯一ID
+//#import "ZXPUnicode.h"//控制台打印
+#import "JJKeyValueObserver.h"//KVO
+#import "UIView+Events.h"//UIview添加手势
+#import "UIImage+GradientColor.h"//渐变色图片
+#import "UIView+Gradient.h"//渐变色view
+#import "WCLActionSheet.h"//选择弹框
+#import "UIImage+Stretching.h"//图片重新整理
+#import "XHWebImageAutoSize.h"//网络图片自适应
+#import "UILabel+AlignmentLeftAndRight.h"//label均匀分布
+#import "UIView+FrameTool.h"//UIView的工具
+#import "XMFRefreshAutoNormalFooter.h"//上拉刷新
+#import "XMFRefreshNormalHeader.h"//下拉刷新
+#import "UIBarButtonItem+Extension.h"
+#import "XMFGlobalManager.h"//小蜜蜂全局类
+#import "UIView+GFCorner.h"//切圆角
+#import "UIView+GFBorder.h"//加边框
+#import "NSDictionary+NullObject.h"//判断字段是否为空
+#import "UILabel+YBAttributeTextTapAction.h"//UIlabel文本可点击
+#import "UIView+FrameCategory.h"//UIView的分类
+#import "UITextView+WZB.h"//UITextView的自动高度分类
+#import "UITextView+ZWPlaceHolder.h"//UITextView的占位分类
+#import "DateUtils.h"//时间日期工具
+#import "IPToolManager.h"//IP地址工具
+#import "UIImage+ImgSize.h"//获取网络图片Size
+#import "UITextField+TextLeftOffset_ffset.h"//textfield左边间距
+
+
+
+
+
+#pragma mark - ——————— 第三方 ————————
+#import "MBProgressHUD+NHAdd.h"//含MBProgressHUD的拓展提示框
+#import "Masonry.h"//布局
+#import "LYEmptyViewHeader.h"//占位图
+#import "IQKeyboardManager.h"//键盘处理
+#import "SDWebImage.h"//设置图片头文件
+#import <SDWebImage/UIButton+WebCache.h>//给按钮设置图片
+#import "WHUCornerMaker.h"//切圆角
+#import "WHUBorderMaker.h"//加边框
+#import "MMWebView.h"//网页浏览器
+#import "YYModel.h"//数据模型
+#import "KKPaddingLabel.h"//内缩UIlabel
+#import <YYCache/YYCache.h>//YYCache数据缓存
+//#import <BRPickerView.h>//选择器
+#import "BRPickerView.h"//选择器
+#import "SDCycleScrollView.h"//图片轮播器
+#import "UITableView+FDTemplateLayoutCell.h"//自动计算cell高度
+#import "SGQRCode.h"//二维码
+#import "HUPhotoBrowser.h"//图片浏览
+
+//支付SDK
+#import "ZDPay_OrderSureViewController.h"
+#import "ZDPay_OrderSureModel.h"
+#import "ZDPay_MyWalletViewController.h"
+//支付SDK
+
+#import "TZImagePickerController.h"//图片选择器
+#import "PopoverView.h"//微型菜单弹窗
+#import "GKPhotoBrowser.h"//图片浏览器
+#import <AxcAE_TabBar/AxcAE_TabBar.h>//自定义特效TabBar
+#import "GKCover.h"//#import "GKCover.h"
+
+//登录注册SDK头文件
+#import "EqualPchHeader.h"
+
+#import "CHButton.h"//角标按钮
+#import "GZCAlignButton.h"//角标按钮
+#import "FSActionSheet.h"//底部弹框
+#import "UIImage+RoundedCorner.h"//生成带圆角的图片
+#import "UIView+DWQEmptyView.h"//弱网占位图
+#import "LBXPermission.h"//权限检测
+#import "LBXPermissionCamera.h"//相机权限检测
+
+
+
+#endif /* PrefixHeader_pch */

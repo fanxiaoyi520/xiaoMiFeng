@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZFAppTipsView">
+            <rect key="frame" x="0.0" y="0.0" width="433" height="482"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41p-LJ-EYr">
+                    <rect key="frame" x="66.5" y="176" width="300" height="130"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前已是最新版本！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhL-M1-pK8">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="80" id="30j-ln-Ek2"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buJ-ew-NpV">
+                            <rect key="frame" x="0.0" y="80" width="300" height="50"/>
+                            <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="确定">
+                                <color key="titleColor" red="0.0" green="0.3529411764705882" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="sureBtnDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="PQ2-53-vww"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="fhL-M1-pK8" firstAttribute="leading" secondItem="41p-LJ-EYr" secondAttribute="leading" id="04o-9o-SHF"/>
+                        <constraint firstAttribute="bottom" secondItem="buJ-ew-NpV" secondAttribute="bottom" id="ClA-QD-MaJ"/>
+                        <constraint firstAttribute="width" constant="300" id="PBr-ps-DWn"/>
+                        <constraint firstAttribute="trailing" secondItem="buJ-ew-NpV" secondAttribute="trailing" id="ZGb-jV-KQk"/>
+                        <constraint firstItem="buJ-ew-NpV" firstAttribute="leading" secondItem="41p-LJ-EYr" secondAttribute="leading" id="f8s-QF-7g3"/>
+                        <constraint firstAttribute="trailing" secondItem="fhL-M1-pK8" secondAttribute="trailing" id="hej-n3-ry7"/>
+                        <constraint firstItem="buJ-ew-NpV" firstAttribute="top" secondItem="fhL-M1-pK8" secondAttribute="bottom" id="jt0-Bn-Q5U"/>
+                        <constraint firstAttribute="height" constant="130" id="wPn-Fu-AzW"/>
+                        <constraint firstItem="fhL-M1-pK8" firstAttribute="top" secondItem="41p-LJ-EYr" secondAttribute="top" id="y8d-sp-kbe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="41p-LJ-EYr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="XQl-h8-D0k"/>
+                <constraint firstItem="41p-LJ-EYr" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="XUb-xf-wIq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgView" destination="41p-LJ-EYr" id="66R-w0-qrS"/>
+                <outlet property="sureBtn" destination="buJ-ew-NpV" id="yKO-gr-ElA"/>
+                <outlet property="tipsLB" destination="fhL-M1-pK8" id="DDb-Ia-HpS"/>
+            </connections>
+            <point key="canvasLocation" x="67.391304347826093" y="-71.651785714285708"/>
+        </view>
+    </objects>
+</document>

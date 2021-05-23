@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XMFOrderConfirmFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="404" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lpw-Sz-iid">
+                    <rect key="frame" x="0.0" y="15" width="404" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="买家留言" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzn-VX-D8S">
+                            <rect key="frame" x="15" y="0.0" width="58" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="P1r-yK-baU">
+                            <rect key="frame" x="88" y="0.0" width="301" height="50"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="G4r-QV-8Cu"/>
+                            </constraints>
+                            <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="fzn-VX-D8S" secondAttribute="bottom" id="2pW-NF-C4G"/>
+                        <constraint firstItem="P1r-yK-baU" firstAttribute="leading" secondItem="fzn-VX-D8S" secondAttribute="trailing" constant="15" id="EEo-9I-hUr"/>
+                        <constraint firstItem="P1r-yK-baU" firstAttribute="top" secondItem="lpw-Sz-iid" secondAttribute="top" id="O0D-sC-rxF"/>
+                        <constraint firstAttribute="trailing" secondItem="P1r-yK-baU" secondAttribute="trailing" constant="15" id="TuO-8z-e0v"/>
+                        <constraint firstAttribute="bottom" secondItem="P1r-yK-baU" secondAttribute="bottom" id="g6O-cX-7gZ"/>
+                        <constraint firstItem="fzn-VX-D8S" firstAttribute="top" secondItem="lpw-Sz-iid" secondAttribute="top" id="if3-Vk-pej"/>
+                        <constraint firstItem="fzn-VX-D8S" firstAttribute="leading" secondItem="lpw-Sz-iid" secondAttribute="leading" constant="15" id="td3-dy-Iw5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="lpw-Sz-iid" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3sL-Fv-Hok"/>
+                <constraint firstAttribute="bottom" secondItem="lpw-Sz-iid" secondAttribute="bottom" constant="15" id="F2K-Pe-LCE"/>
+                <constraint firstItem="lpw-Sz-iid" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="HOO-eS-ZMP"/>
+                <constraint firstAttribute="trailing" secondItem="lpw-Sz-iid" secondAttribute="trailing" id="a3c-nu-GZO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="messageTxW" destination="P1r-yK-baU" id="6dy-Lh-JG0"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="-98.772321428571431"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="XMFHomeGoodsClassifyCell">
+            <rect key="frame" x="0.0" y="0.0" width="82" height="164"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="82" height="164"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_common_placeRect" translatesAutoresizingMaskIntoConstraints="NO" id="Cae-uO-2W2">
+                        <rect key="frame" x="18" y="12" width="46" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Cae-uO-2W2" secondAttribute="height" multiplier="1:1" id="adL-AC-AIV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ZI-lR-imS">
+                        <rect key="frame" x="0.0" y="66" width="82" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0ZI-lR-imS" secondAttribute="trailing" id="4k4-P0-jDN"/>
+                <constraint firstItem="Cae-uO-2W2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="V3B-pY-w3r"/>
+                <constraint firstItem="Cae-uO-2W2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="18" id="qPw-Qs-1T1"/>
+                <constraint firstAttribute="trailing" secondItem="Cae-uO-2W2" secondAttribute="trailing" constant="18" id="tbo-Kx-gf8"/>
+                <constraint firstItem="0ZI-lR-imS" firstAttribute="top" secondItem="Cae-uO-2W2" secondAttribute="bottom" constant="8" id="uNS-kG-HFd"/>
+                <constraint firstItem="0ZI-lR-imS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yB8-xz-0hV"/>
+            </constraints>
+            <size key="customSize" width="82" height="164"/>
+            <connections>
+                <outlet property="classifyImgView" destination="Cae-uO-2W2" id="Alu-H9-1qT"/>
+                <outlet property="classifyNameLB" destination="0ZI-lR-imS" id="Bjd-d9-eqv"/>
+            </connections>
+            <point key="canvasLocation" x="7" y="96"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_common_placeRect" width="100" height="100"/>
+    </resources>
+</document>

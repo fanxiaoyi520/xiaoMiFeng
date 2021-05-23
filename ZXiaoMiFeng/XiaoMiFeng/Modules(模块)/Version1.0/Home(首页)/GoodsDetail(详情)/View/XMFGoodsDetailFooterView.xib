@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XMFGoodsDetailFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="344" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ox1-SO-HZm">
+                    <rect key="frame" x="229.5" y="0.0" width="114.5" height="55"/>
+                    <color key="backgroundColor" red="0.98431372549999996" green="0.30196078430000001" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="立即购买"/>
+                    <connections>
+                        <action selector="buttonsOnViewDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ns8-ND-xQr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQH-HK-hpX">
+                    <rect key="frame" x="114.5" y="0.0" width="115" height="55"/>
+                    <color key="backgroundColor" red="0.99607843137254903" green="0.59999999999999998" blue="0.0078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="加入购物车"/>
+                    <connections>
+                        <action selector="buttonsOnViewDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="BiX-XM-mAH"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ts4-6O-efv">
+                    <rect key="frame" x="0.0" y="0.0" width="114.5" height="55"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jeb-Ef-PB1">
+                            <rect key="frame" x="0.0" y="0.0" width="57.5" height="55"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <state key="normal" title="客服" image="icon_detail_kefu">
+                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonsOnViewDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="utX-ie-2FG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDG-Ab-MUG">
+                            <rect key="frame" x="57.5" y="0.0" width="57" height="55"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <state key="normal" title="  收藏  " image="icon_detail_shouchang">
+                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected" title="已收藏" image="icon_detail_sc_ye"/>
+                            <connections>
+                                <action selector="buttonsOnViewDidClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="91j-eE-OYc"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PNM-wW-IE4">
+                            <rect key="frame" x="56.5" y="10" width="1" height="40"/>
+                            <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="5f5-IO-QKM"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="PNM-wW-IE4" firstAttribute="top" secondItem="ts4-6O-efv" secondAttribute="top" constant="10" id="4De-8N-yGM"/>
+                        <constraint firstAttribute="bottom" secondItem="Jeb-Ef-PB1" secondAttribute="bottom" id="9ab-go-pxO"/>
+                        <constraint firstItem="PNM-wW-IE4" firstAttribute="trailing" secondItem="Jeb-Ef-PB1" secondAttribute="trailing" id="C8l-Xz-BUA"/>
+                        <constraint firstItem="GDG-Ab-MUG" firstAttribute="top" secondItem="ts4-6O-efv" secondAttribute="top" id="Wcw-3E-klz"/>
+                        <constraint firstAttribute="bottom" secondItem="GDG-Ab-MUG" secondAttribute="bottom" id="d2Z-Q5-DMk"/>
+                        <constraint firstItem="Jeb-Ef-PB1" firstAttribute="leading" secondItem="ts4-6O-efv" secondAttribute="leading" id="evf-2d-zSH"/>
+                        <constraint firstItem="Jeb-Ef-PB1" firstAttribute="top" secondItem="ts4-6O-efv" secondAttribute="top" id="g7J-TM-Nvz"/>
+                        <constraint firstAttribute="bottom" secondItem="PNM-wW-IE4" secondAttribute="bottom" constant="5" id="geE-f2-g4f"/>
+                        <constraint firstAttribute="trailing" secondItem="GDG-Ab-MUG" secondAttribute="trailing" id="gew-bP-o5o"/>
+                        <constraint firstItem="GDG-Ab-MUG" firstAttribute="width" secondItem="Jeb-Ef-PB1" secondAttribute="width" id="nmM-lC-oIO"/>
+                        <constraint firstItem="GDG-Ab-MUG" firstAttribute="leading" secondItem="Jeb-Ef-PB1" secondAttribute="trailing" id="ryT-2o-Izi"/>
+                        <constraint firstItem="GDG-Ab-MUG" firstAttribute="leading" secondItem="Jeb-Ef-PB1" secondAttribute="trailing" id="yDn-nw-Jmp"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LdT-Up-OPN">
+                    <rect key="frame" x="0.0" y="0.0" width="344" height="1"/>
+                    <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="xwU-AK-ClZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="zQH-HK-hpX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1BR-hY-8Uo"/>
+                <constraint firstAttribute="bottom" secondItem="ox1-SO-HZm" secondAttribute="bottom" id="3X6-XS-igv"/>
+                <constraint firstItem="LdT-Up-OPN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9Zy-jD-9l7"/>
+                <constraint firstItem="ts4-6O-efv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BuQ-iA-liv"/>
+                <constraint firstItem="ox1-SO-HZm" firstAttribute="leading" secondItem="zQH-HK-hpX" secondAttribute="trailing" id="GHU-kj-acU"/>
+                <constraint firstItem="ox1-SO-HZm" firstAttribute="width" secondItem="zQH-HK-hpX" secondAttribute="width" id="Haf-2J-t11"/>
+                <constraint firstItem="LdT-Up-OPN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="I0t-9k-pjM"/>
+                <constraint firstItem="ts4-6O-efv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LxW-Lp-EFn"/>
+                <constraint firstAttribute="trailing" secondItem="LdT-Up-OPN" secondAttribute="trailing" id="QxT-CQ-G2f"/>
+                <constraint firstAttribute="trailing" secondItem="ox1-SO-HZm" secondAttribute="trailing" id="TVc-c2-7sU"/>
+                <constraint firstItem="ox1-SO-HZm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UKY-uS-coo"/>
+                <constraint firstItem="zQH-HK-hpX" firstAttribute="width" secondItem="ts4-6O-efv" secondAttribute="width" id="V9k-23-AQF"/>
+                <constraint firstAttribute="bottom" secondItem="zQH-HK-hpX" secondAttribute="bottom" id="VoX-AL-oms"/>
+                <constraint firstAttribute="bottom" secondItem="ts4-6O-efv" secondAttribute="bottom" id="aDZ-Z1-2Dx"/>
+                <constraint firstItem="zQH-HK-hpX" firstAttribute="leading" secondItem="ts4-6O-efv" secondAttribute="trailing" id="pHm-WY-1ou"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectBtn" destination="GDG-Ab-MUG" id="B5p-3l-vVg"/>
+                <outlet property="serviceBtn" destination="Jeb-Ef-PB1" id="TO3-3g-0NR"/>
+            </connections>
+            <point key="canvasLocation" x="75.362318840579718" y="-142.96875"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_detail_kefu" width="20" height="20"/>
+        <image name="icon_detail_sc_ye" width="20" height="20"/>
+        <image name="icon_detail_shouchang" width="20" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XMFThemeController">
+            <connections>
+                <outlet property="meBtn" destination="2LO-dd-Y2i" id="OkR-LO-Ieo"/>
+                <outlet property="myCollectionView" destination="V2a-BD-Wzg" id="Chf-CS-rT8"/>
+                <outlet property="searchBtn" destination="oZa-Zy-xxm" id="lMP-7U-O6h"/>
+                <outlet property="topView" destination="Ncz-W1-wl3" id="Cwv-fZ-tsn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ncz-W1-wl3">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="154"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2LO-dd-Y2i">
+                            <rect key="frame" x="362" y="49" width="52" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="52" id="nul-sE-mOx"/>
+                            </constraints>
+                            <state key="normal" image="icon_sy_gr"/>
+                            <connections>
+                                <action selector="buttonsOnViewDidClick:" destination="-1" eventType="touchUpInside" id="dQc-2A-BhR"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZa-Zy-xxm">
+                            <rect key="frame" x="15" y="49" width="347" height="34"/>
+                            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="l44-bq-RA0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="  搜索商品" image="icon_home_search">
+                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonsOnViewDidClick:" destination="-1" eventType="touchUpInside" id="OT1-Iv-gK8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96862745100000003" green="0.81176470590000005" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="oZa-Zy-xxm" firstAttribute="top" secondItem="Ncz-W1-wl3" secondAttribute="top" constant="49" id="Dkq-qN-qGl"/>
+                        <constraint firstItem="2LO-dd-Y2i" firstAttribute="bottom" secondItem="oZa-Zy-xxm" secondAttribute="bottom" id="Ewd-Lj-Xp7"/>
+                        <constraint firstItem="oZa-Zy-xxm" firstAttribute="leading" secondItem="Ncz-W1-wl3" secondAttribute="leading" constant="15" id="SQ7-DZ-hMN"/>
+                        <constraint firstAttribute="height" constant="154" id="Wki-yn-EqL"/>
+                        <constraint firstItem="2LO-dd-Y2i" firstAttribute="leading" secondItem="oZa-Zy-xxm" secondAttribute="trailing" id="gsC-Wk-WNa"/>
+                        <constraint firstAttribute="trailing" secondItem="2LO-dd-Y2i" secondAttribute="trailing" id="sRU-k2-bKP"/>
+                        <constraint firstItem="2LO-dd-Y2i" firstAttribute="top" secondItem="oZa-Zy-xxm" secondAttribute="top" id="uSx-Za-SvO"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="V2a-BD-Wzg">
+                    <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ebp-jK-Zvg">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Ncz-W1-wl3" secondAttribute="trailing" id="1Ht-NB-FvS"/>
+                <constraint firstItem="Ncz-W1-wl3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ACX-h4-s0m"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="V2a-BD-Wzg" secondAttribute="bottom" id="aKQ-bK-tFt"/>
+                <constraint firstItem="V2a-BD-Wzg" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="hGG-nP-abz"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="V2a-BD-Wzg" secondAttribute="trailing" id="iBh-47-ezT"/>
+                <constraint firstItem="V2a-BD-Wzg" firstAttribute="top" secondItem="Ncz-W1-wl3" secondAttribute="bottom" constant="-50" id="jhK-i4-RcO"/>
+                <constraint firstItem="Ncz-W1-wl3" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="u2F-3c-Sgv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="137.68115942028987" y="95.758928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_home_search" width="14" height="14"/>
+        <image name="icon_sy_gr" width="24" height="24"/>
+    </resources>
+</document>

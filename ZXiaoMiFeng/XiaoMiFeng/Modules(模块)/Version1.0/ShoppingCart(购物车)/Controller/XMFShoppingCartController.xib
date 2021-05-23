@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XMFShoppingCartController">
+            <connections>
+                <outlet property="bottomView" destination="Dkf-8N-vie" id="FNC-kO-s1v"/>
+                <outlet property="bottomViewHeight" destination="ijp-2E-RHf" id="cif-fC-Ugb"/>
+                <outlet property="caculateAndDeleteBtn" destination="U7t-uU-aJT" id="7B9-Wo-7Qy"/>
+                <outlet property="chooseAllBtn" destination="R2C-jO-txx" id="TBn-eb-BFb"/>
+                <outlet property="myTableView" destination="FeW-pb-Q4F" id="X6f-TM-dRn"/>
+                <outlet property="topSpace" destination="4aV-Rf-jEr" id="FIJ-f7-NZ8"/>
+                <outlet property="totalMoneyLB" destination="SS0-5a-IQ6" id="8Fy-U4-naO"/>
+                <outlet property="view" destination="iN0-l3-epB" id="71F-SI-LGl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FeW-pb-Q4F">
+                    <rect key="frame" x="0.0" y="44" width="414" height="774"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="kaZ-ZK-ulH"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dkf-8N-vie">
+                    <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2C-jO-txx">
+                            <rect key="frame" x="14" y="0.0" width="65" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="65" id="Udq-NF-Ygo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                            <state key="normal" title="  全选" image="icon_cart_seletct">
+                                <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" title="  全选" image="icon_cart_seletcted"/>
+                            <connections>
+                                <action selector="buttonsOnViewDidClick:" destination="-1" eventType="touchUpInside" id="5qC-5y-hQu"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7t-uU-aJT">
+                            <rect key="frame" x="289" y="0.0" width="125" height="44"/>
+                            <color key="backgroundColor" red="0.98431372549999996" green="0.30196078430000001" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="125" id="gUG-qe-Wnr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="结算"/>
+                            <connections>
+                                <action selector="buttonsOnViewDidClick:" destination="-1" eventType="touchUpInside" id="kNL-iO-tb7"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SS0-5a-IQ6">
+                            <rect key="frame" x="272.5" y="0.0" width="6.5" height="44"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pNf-VC-YdA">
+                            <rect key="frame" x="0.0" y="0.0" width="289" height="1"/>
+                            <color key="backgroundColor" red="0.91372549020000005" green="0.92156862750000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="n71-at-aFF"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="U7t-uU-aJT" firstAttribute="top" secondItem="Dkf-8N-vie" secondAttribute="top" id="3SC-hW-WP9"/>
+                        <constraint firstItem="pNf-VC-YdA" firstAttribute="leading" secondItem="Dkf-8N-vie" secondAttribute="leading" id="9cP-Fn-7Dr"/>
+                        <constraint firstItem="pNf-VC-YdA" firstAttribute="top" secondItem="Dkf-8N-vie" secondAttribute="top" id="Hin-LG-jtm"/>
+                        <constraint firstItem="SS0-5a-IQ6" firstAttribute="top" secondItem="Dkf-8N-vie" secondAttribute="top" id="Hoc-Hl-pdL"/>
+                        <constraint firstItem="R2C-jO-txx" firstAttribute="leading" secondItem="Dkf-8N-vie" secondAttribute="leading" constant="14" id="Qww-gf-wAr"/>
+                        <constraint firstAttribute="bottom" secondItem="U7t-uU-aJT" secondAttribute="bottom" id="RcW-ht-p6Y"/>
+                        <constraint firstAttribute="trailing" secondItem="U7t-uU-aJT" secondAttribute="trailing" id="Sjb-h8-HiW"/>
+                        <constraint firstAttribute="bottom" secondItem="SS0-5a-IQ6" secondAttribute="bottom" id="Vys-19-I7M"/>
+                        <constraint firstItem="U7t-uU-aJT" firstAttribute="leading" secondItem="pNf-VC-YdA" secondAttribute="trailing" id="dJI-yT-fU7"/>
+                        <constraint firstItem="R2C-jO-txx" firstAttribute="top" secondItem="Dkf-8N-vie" secondAttribute="top" id="gR6-Lz-kHO"/>
+                        <constraint firstAttribute="height" constant="44" id="ijp-2E-RHf"/>
+                        <constraint firstItem="U7t-uU-aJT" firstAttribute="leading" secondItem="SS0-5a-IQ6" secondAttribute="trailing" constant="10" id="jQW-3W-cCB"/>
+                        <constraint firstAttribute="bottom" secondItem="R2C-jO-txx" secondAttribute="bottom" id="pNg-Mw-IAV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="FeW-pb-Q4F" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="4aV-Rf-jEr"/>
+                <constraint firstItem="FeW-pb-Q4F" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="B5z-ex-RPB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FeW-pb-Q4F" secondAttribute="trailing" id="Dgu-7p-QNw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Dkf-8N-vie" secondAttribute="bottom" id="Gde-JX-FJE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Dkf-8N-vie" secondAttribute="trailing" id="N6w-O5-lKj"/>
+                <constraint firstItem="Dkf-8N-vie" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="NdC-Ko-5zv"/>
+                <constraint firstItem="Dkf-8N-vie" firstAttribute="top" secondItem="FeW-pb-Q4F" secondAttribute="bottom" id="Pey-bC-clq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="83.705357142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_cart_seletct" width="17" height="17"/>
+        <image name="icon_cart_seletcted" width="17" height="18"/>
+    </resources>
+</document>

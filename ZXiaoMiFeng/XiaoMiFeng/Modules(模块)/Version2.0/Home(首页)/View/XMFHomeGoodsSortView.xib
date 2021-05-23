@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XMFHomeGoodsSortView">
+            <rect key="frame" x="0.0" y="0.0" width="251" height="369"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EEK-P5-GBf">
+                    <rect key="frame" x="0.0" y="0.0" width="251" height="120"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="GjO-u1-1bE"/>
+                    </constraints>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="EEK-P5-GBf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Cai-X5-EBb"/>
+                <constraint firstAttribute="trailing" secondItem="EEK-P5-GBf" secondAttribute="trailing" id="SUc-59-EY9"/>
+                <constraint firstItem="EEK-P5-GBf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rPq-uC-dig"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="myTableView" destination="EEK-P5-GBf" id="rNz-hd-uxq"/>
+                <outlet property="tapGesture" destination="nMK-Ta-FNE" id="7uN-T4-qkT"/>
+                <outletCollection property="gestureRecognizers" destination="nMK-Ta-FNE" appends="YES" id="nuo-K7-DWz"/>
+            </connections>
+            <point key="canvasLocation" x="58.695652173913047" y="-114.17410714285714"/>
+        </view>
+        <tapGestureRecognizer id="nMK-Ta-FNE">
+            <connections>
+                <action selector="hideSelf:" destination="iN0-l3-epB" id="3Ki-QL-wIC"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>
